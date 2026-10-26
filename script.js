@@ -17,7 +17,7 @@ function notify(message) {
 async function copyLink(url, button) {
   try {
     await navigator.clipboard.writeText(url);
-    notify('Havola nusxalandi');
+    notify('Link copied');
     if (button) {
       button.classList.add('copied');
       setTimeout(() => button.classList.remove('copied'), 1800);
